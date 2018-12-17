@@ -12,7 +12,7 @@ public class CameraControl : MonoBehaviour {
     
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetMouseButton(2))
+        if (Input.GetMouseButton(1))
         {
             if (Input.mousePosition.x >= Screen.width * 0.95)
             {
