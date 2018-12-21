@@ -61,15 +61,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BeginGame.cs" />
     <Compile Include="Assets\Scripts\CameraControl.cs" />
+    <Compile Include="Assets\Scripts\CamMove.cs" />
     <Compile Include="Assets\Scripts\CharStats.cs" />
-    <Compile Include="Assets\Scripts\CharStats\CharStats.cs" />
+    <Compile Include="Assets\Scripts\CharStats\Enemy.cs" />
     <Compile Include="Assets\Scripts\CharStats\Gregorius.cs" />
+    <Compile Include="Assets\Scripts\CharStats\Titus.cs" />
     <Compile Include="Assets\Scripts\Grid.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
     <Compile Include="Assets\Scripts\Node.cs" />
     <Compile Include="Assets\Scripts\Nodetypes\Ground.cs" />
+    <Compile Include="Assets\Scripts\ObjectiveChange.cs" />
+    <Compile Include="Assets\Scripts\ObstacleDurability.cs" />
     <Compile Include="Assets\Scripts\Pathfinding.cs" />
+    <Compile Include="Assets\Scripts\Quit.cs" />
     <Compile Include="Assets\Scripts\Transporter.cs" />
     <Compile Include="Assets\Scripts\TurnOrder.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">

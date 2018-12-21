@@ -2,17 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class CharStats {
+public class CharStats : MonoBehaviour {
     protected int Health;
     protected int Energy;
     protected int Strength;
     protected int Defense;
     public int Agility;
+    public Movement movescript;
+    public bool playercontrol;
 
+    public int HP;
     protected int Movement;
-    int movenum(int Agility)
+    public int Movenum(int Agility)
     {
-        int movement = (Agility / 100);
+        int movement = (Agility / 10);
         return movement;
     }
 }

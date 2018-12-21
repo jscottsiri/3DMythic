@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class Transporter : MonoBehaviour {
 
+    public Movement movescript;
     public Transform Exit1;
     public Transform Enter1;
     public Transform Exit2;
     public Transform Enter2;
     public Transform chara;
-    public int fac;
-	// Use this for initialization
 	void Start () {
-		
-	}
+        chara = movescript.CurrentCharacter.transform;
+    }
 	
 
-	void FixedUpdate () {
+	void Update () {
+        chara = movescript.CurrentCharacter.transform;
         teleport();
+
     }
     void teleport ()
     {

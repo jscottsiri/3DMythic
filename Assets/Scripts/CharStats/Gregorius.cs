@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Gregorius : CharStats
 {
-    int charid = 1;
+    readonly int charid = 1;
+    List<GameObject> moblist;
+    CharStats mobStats;
     public Gregorius()
     {
         Health = 100;
@@ -12,5 +14,17 @@ public class Gregorius : CharStats
         Strength = 100;
         Defense = 100;
         Agility = 100;
+        playercontrol = true;
+        
+        Movement = Movenum(Agility);
+        HP = Health;
+    }
+
+    private void Update()
+    {
+        if (HP <= 0)
+        {
+            Application.Quit();
+        }
     }
 }

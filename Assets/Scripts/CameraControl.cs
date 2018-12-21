@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraControl : MonoBehaviour {
-    int ScrollSpeed = 5;
+    readonly int ScrollSpeed = 7;
     public Transform target;
 	// Use this for initialization
 	void Start () {
